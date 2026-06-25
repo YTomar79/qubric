@@ -45,6 +45,7 @@
 		B00000000000000000000136 /* QubricLaunchAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000136 /* QubricLaunchAnimationView.swift */; };
 		B00000000000000000000137 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000137 /* PrivacyInfo.xcprivacy */; };
 		B00000000000000000000138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000138 /* Assets.xcassets */; };
+		B00000000000000000000401 /* QubricQuantumEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000401 /* QubricQuantumEngineTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,10 +88,37 @@
 		A00000000000000000000136 /* QubricLaunchAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QubricLaunchAnimationView.swift; sourceTree = "<group>"; };
 		A00000000000000000000137 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		A00000000000000000000138 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A00000000000000000000406 /* QubricTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QubricTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000401 /* QubricQuantumEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QubricQuantumEngineTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXContainerItemProxy section */
+		A00000000000000000000410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000000004;
+			remoteInfo = Qubric;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXTargetDependency section */
+		A00000000000000000000411 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A00000000000000000000004 /* Qubric */;
+			targetProxy = A00000000000000000000410 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A00000000000000000000007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000407 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -104,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				A00000000000000000000009 /* Qubric */,
+				A00000000000000000000400 /* QubricTests */,
 				A00000000000000000000003 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,8 +141,17 @@
 			isa = PBXGroup;
 			children = (
 				A00000000000000000000005 /* Qubric.app */,
+				A00000000000000000000406 /* QubricTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000400 /* QubricTests */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000401 /* QubricQuantumEngineTests.swift */,
+			);
+			path = QubricTests;
 			sourceTree = "<group>";
 		};
 		A00000000000000000000009 /* Qubric */ = {
@@ -205,6 +243,23 @@
 			productReference = A00000000000000000000005 /* Qubric.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A00000000000000000000404 /* QubricTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000430 /* Build configuration list for PBXNativeTarget "QubricTests" */;
+			buildPhases = (
+				A00000000000000000000403 /* Sources */,
+				A00000000000000000000407 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A00000000000000000000411 /* PBXTargetDependency */,
+			);
+			name = QubricTests;
+			productName = QubricTests;
+			productReference = A00000000000000000000406 /* QubricTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -217,6 +272,10 @@
 				TargetAttributes = {
 					A00000000000000000000004 = {
 						CreatedOnToolsVersion = 16.3;
+					};
+					A00000000000000000000404 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = A00000000000000000000004;
 					};
 				};
 			};
@@ -234,6 +293,7 @@
 			projectRoot = "";
 			targets = (
 				A00000000000000000000004 /* Qubric */,
+				A00000000000000000000404 /* QubricTests */,
 			);
 		};
 /* End PBXProject section */
@@ -291,6 +351,14 @@
 				B00000000000000000000126 /* PuzzleHelpers.swift in Sources */,
 				B00000000000000000000111 /* DailyView.swift in Sources */,
 				B00000000000000000000112 /* AccountView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000403 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000401 /* QubricQuantumEngineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +543,46 @@
 			};
 			name = Release;
 		};
+		A00000000000000000000431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = NJ2432VN6P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = qubric.app.QubricTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qubric.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Qubric";
+			};
+			name = Debug;
+		};
+		A00000000000000000000432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = NJ2432VN6P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = qubric.app.QubricTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qubric.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Qubric";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -492,6 +600,15 @@
 			buildConfigurations = (
 				A00000000000000000000021 /* Debug */,
 				A00000000000000000000022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000430 /* Build configuration list for PBXNativeTarget "QubricTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000431 /* Debug */,
+				A00000000000000000000432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,8 +1,9 @@
 # Qubric
 
+[![CI](https://github.com/YTomar79/qubric/actions/workflows/ci.yml/badge.svg)](https://github.com/YTomar79/qubric/actions/workflows/ci.yml)
 ![Platform](https://img.shields.io/badge/platform-iOS%2017%2B-blue)
 ![Swift](https://img.shields.io/badge/Swift-5-orange)
-![UI](https://img.shields.io/badge/UI-SwiftUI-green)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 Qubric is an educational quantum puzzle game for iOS. Players solve hands-on puzzles backed by a real state-vector simulator, progressing through a chapter-based journey and a rotating daily challenge.
 
@@ -21,26 +22,40 @@ Qubric is an educational quantum puzzle game for iOS. Players solve hands-on puz
 - iOS 17.0+
 - Swift 5
 
-## Getting Started
+## Install
 
 ```bash
-git clone <your-repo-url>
-cd qubric/ios
+git clone https://github.com/YTomar79/qubric.git
+cd qubric
 open Qubric.xcodeproj
 ```
 
 Select the `Qubric` scheme and run on a simulator or device.
 
-### Command-line build
+## Quick check (build)
 
 ```bash
-xcodebuild -project Qubric.xcodeproj \
+xcodebuild build \
+  -project Qubric.xcodeproj \
   -scheme Qubric \
-  -configuration Debug \
-  -destination 'generic/platform=iOS Simulator' \
-  -derivedDataPath DerivedData \
-  build
+  -destination 'platform=iOS Simulator,name=iPhone 16'
 ```
+
+## Test
+
+```bash
+xcodebuild test \
+  -project Qubric.xcodeproj \
+  -scheme Qubric \
+  -destination 'platform=iOS Simulator,name=iPhone 16' \
+  CODE_SIGNING_ALLOWED=NO
+```
+
+The `QubricTests` target covers the quantum engine: complex arithmetic, state resolution, gate application, and derived measurements. CI runs the same build and test on every push and pull request.
+
+## Dependencies
+
+None. Qubric uses only first-party Apple frameworks (SwiftUI, Foundation, AVFoundation, UserNotifications). There is no package manager step.
 
 ## Configuration
 
@@ -55,20 +70,23 @@ Set `QUBRIC_API_URL` in the Xcode scheme or your build settings to point at your
 ## Project Structure
 
 ```
-Qubric/
-├── QubricApp.swift            App entry point and global appearance
-├── ContentView.swift          Root tab navigation
-├── JourneyView.swift          Chapter map and progression
-├── DailyView.swift            Daily challenge flow
-├── AccountView.swift          Account, settings, and data controls
-├── AuthView.swift             Sign-in and account creation
-├── QubricStore.swift          Central app state and persistence
-├── QubricAPIClient.swift      Networking layer
-├── QubricModels.swift         Core data models
-├── QubricQuantumEngine.swift  State-vector simulator
-├── QubricTheme.swift          Design tokens
-├── QubricComponents.swift     Shared UI components
-└── Puzzle/                    Puzzle screen and its subviews
+.
+├── Qubric/                    App sources
+│   ├── QubricApp.swift            App entry point and global appearance
+│   ├── ContentView.swift          Root tab navigation
+│   ├── JourneyView.swift          Chapter map and progression
+│   ├── DailyView.swift            Daily challenge flow
+│   ├── AccountView.swift          Account, settings, and data controls
+│   ├── AuthView.swift             Sign-in and account creation
+│   ├── QubricStore.swift          Central app state and persistence
+│   ├── QubricAPIClient.swift      Networking layer
+│   ├── QubricModels.swift         Core data models
+│   ├── QubricQuantumEngine.swift  State-vector simulator
+│   ├── QubricTheme.swift          Design tokens
+│   ├── QubricComponents.swift     Shared UI components
+│   └── Puzzle/                    Puzzle screen and its subviews
+├── QubricTests/               Unit tests
+└── .github/workflows/ci.yml   Continuous integration
 ```
 
 ## Privacy
@@ -77,4 +95,4 @@ Qubric requests only optional notification permission and includes an in-app acc
 
 ## License
 
-Copyright © 2026. All rights reserved. Replace this section with your chosen license before publishing.
+Released under the [MIT License](LICENSE).
