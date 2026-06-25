@@ -24,10 +24,6 @@ playground.xcworkspace
 .build/
 .swiftpm/
 
-# CocoaPods / Carthage (uncomment if used)
-# Pods/
-# Carthage/Build/
-
 # fastlane
 fastlane/report.xml
 fastlane/Preview.html
