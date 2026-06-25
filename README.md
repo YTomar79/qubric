@@ -10,6 +10,18 @@
 
 Qubric is an educational quantum puzzle game for iOS. Players solve hands-on puzzles backed by a real state-vector simulator, progressing through a chapter-based journey and a rotating daily challenge.
 
+## Screenshots
+
+<p align="center">
+  <img src="Screenshots/journey.png" width="23%" alt="Journey — chapter map and progression" />
+  &nbsp;
+  <img src="Screenshots/puzzle.png" width="23%" alt="Puzzle — interactive solver" />
+  &nbsp;
+  <img src="Screenshots/daily.png" width="23%" alt="Daily challenge" />
+  &nbsp;
+  <img src="Screenshots/account.png" width="23%" alt="Account and settings" />
+</p>
+
 ## Features
 
 - **Interactive puzzles** — assemble solutions from a palette of operations and run them against a live simulator.
