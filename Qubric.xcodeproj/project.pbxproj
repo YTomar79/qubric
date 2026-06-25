@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00000000000000000000101 /* QubricApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000101 /* QubricApp.swift */; };
+		B00000000000000000000102 /* QubricModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000102 /* QubricModels.swift */; };
+		B00000000000000000000103 /* QubricStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000103 /* QubricStore.swift */; };
+		B00000000000000000000104 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000104 /* ContentView.swift */; };
+		B00000000000000000000105 /* QubricAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000105 /* QubricAPIClient.swift */; };
+		B00000000000000000000106 /* QubricTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000106 /* QubricTheme.swift */; };
+		B00000000000000000000107 /* QubricComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000107 /* QubricComponents.swift */; };
+		B00000000000000000000108 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000108 /* AuthView.swift */; };
+		B00000000000000000000109 /* JourneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000109 /* JourneyView.swift */; };
+		B00000000000000000000110 /* PuzzleRunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000110 /* PuzzleRunView.swift */; };
+		B00000000000000000000111 /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000111 /* DailyView.swift */; };
+		B00000000000000000000112 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000112 /* AccountView.swift */; };
+		B00000000000000000000113 /* QubricQuantumEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000113 /* QubricQuantumEngine.swift */; };
+		B00000000000000000000114 /* Fonts/JetBrainsMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000114 /* Fonts/JetBrainsMono-Regular.ttf */; };
+		B00000000000000000000115 /* Fonts/JetBrainsMono-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000115 /* Fonts/JetBrainsMono-SemiBold.ttf */; };
+		B00000000000000000000116 /* ActiveTaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000116 /* ActiveTaskRow.swift */; };
+		B00000000000000000000117 /* PuzzleTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000117 /* PuzzleTopBar.swift */; };
+		B00000000000000000000118 /* PuzzleComparisonBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000118 /* PuzzleComparisonBoard.swift */; };
+		B00000000000000000000119 /* GatePaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000119 /* GatePaletteView.swift */; };
+		B00000000000000000000120 /* ControlsDock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000120 /* ControlsDock.swift */; };
+		B00000000000000000000121 /* PredictionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000121 /* PredictionCard.swift */; };
+		B00000000000000000000122 /* LearningTrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000122 /* LearningTrayView.swift */; };
+		B00000000000000000000123 /* SolvedInlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000123 /* SolvedInlineView.swift */; };
+		B00000000000000000000124 /* ReflectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000124 /* ReflectionView.swift */; };
+		B00000000000000000000125 /* SolveReplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000125 /* SolveReplayView.swift */; };
+		B00000000000000000000126 /* PuzzleHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000126 /* PuzzleHelpers.swift */; };
+		B00000000000000000000127 /* gate-h.wav in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000127 /* gate-h.wav */; };
+		B00000000000000000000128 /* gate-x.wav in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000128 /* gate-x.wav */; };
+		B00000000000000000000129 /* gate-z.wav in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000129 /* gate-z.wav */; };
+		B00000000000000000000130 /* gate-cnot.wav in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000130 /* gate-cnot.wav */; };
+		B00000000000000000000131 /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000131 /* success.wav */; };
+		B00000000000000000000132 /* error.wav in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000132 /* error.wav */; };
+		B00000000000000000000133 /* hint.wav in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000133 /* hint.wav */; };
+		B00000000000000000000134 /* QubricAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000134 /* QubricAppIcon.png */; };
+		B00000000000000000000135 /* QubricNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000135 /* QubricNotificationManager.swift */; };
+		B00000000000000000000136 /* QubricLaunchAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000136 /* QubricLaunchAnimationView.swift */; };
+		B00000000000000000000137 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000137 /* PrivacyInfo.xcprivacy */; };
+		B00000000000000000000138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000138 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000000005 /* Qubric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qubric.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000101 /* QubricApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QubricApp.swift; sourceTree = "<group>"; };
+		A00000000000000000000102 /* QubricModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QubricModels.swift; sourceTree = "<group>"; };
+		A00000000000000000000103 /* QubricStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QubricStore.swift; sourceTree = "<group>"; };
+		A00000000000000000000104 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A00000000000000000000105 /* QubricAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QubricAPIClient.swift; sourceTree = "<group>"; };
+		A00000000000000000000106 /* QubricTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QubricTheme.swift; sourceTree = "<group>"; };
+		A00000000000000000000107 /* QubricComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QubricComponents.swift; sourceTree = "<group>"; };
+		A00000000000000000000108 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		A00000000000000000000109 /* JourneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyView.swift; sourceTree = "<group>"; };
+		A00000000000000000000110 /* PuzzleRunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleRunView.swift; sourceTree = "<group>"; };
+		A00000000000000000000111 /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
+		A00000000000000000000112 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		A00000000000000000000113 /* QubricQuantumEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QubricQuantumEngine.swift; sourceTree = "<group>"; };
+		A00000000000000000000114 /* Fonts/JetBrainsMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/JetBrainsMono-Regular.ttf"; sourceTree = "<group>"; };
+		A00000000000000000000115 /* Fonts/JetBrainsMono-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/JetBrainsMono-SemiBold.ttf"; sourceTree = "<group>"; };
+		A00000000000000000000116 /* ActiveTaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTaskRow.swift; sourceTree = "<group>"; };
+		A00000000000000000000117 /* PuzzleTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleTopBar.swift; sourceTree = "<group>"; };
+		A00000000000000000000118 /* PuzzleComparisonBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleComparisonBoard.swift; sourceTree = "<group>"; };
+		A00000000000000000000119 /* GatePaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatePaletteView.swift; sourceTree = "<group>"; };
+		A00000000000000000000120 /* ControlsDock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsDock.swift; sourceTree = "<group>"; };
+		A00000000000000000000121 /* PredictionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionCard.swift; sourceTree = "<group>"; };
+		A00000000000000000000122 /* LearningTrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningTrayView.swift; sourceTree = "<group>"; };
+		A00000000000000000000123 /* SolvedInlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolvedInlineView.swift; sourceTree = "<group>"; };
+		A00000000000000000000124 /* ReflectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionView.swift; sourceTree = "<group>"; };
+		A00000000000000000000125 /* SolveReplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveReplayView.swift; sourceTree = "<group>"; };
+		A00000000000000000000126 /* PuzzleHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleHelpers.swift; sourceTree = "<group>"; };
+		A00000000000000000000127 /* gate-h.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "gate-h.wav"; sourceTree = "<group>"; };
+		A00000000000000000000128 /* gate-x.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "gate-x.wav"; sourceTree = "<group>"; };
+		A00000000000000000000129 /* gate-z.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "gate-z.wav"; sourceTree = "<group>"; };
+		A00000000000000000000130 /* gate-cnot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "gate-cnot.wav"; sourceTree = "<group>"; };
+		A00000000000000000000131 /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success.wav; sourceTree = "<group>"; };
+		A00000000000000000000132 /* error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = error.wav; sourceTree = "<group>"; };
+		A00000000000000000000133 /* hint.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hint.wav; sourceTree = "<group>"; };
+		A00000000000000000000134 /* QubricAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QubricAppIcon.png; sourceTree = "<group>"; };
+		A00000000000000000000135 /* QubricNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QubricNotificationManager.swift; sourceTree = "<group>"; };
+		A00000000000000000000136 /* QubricLaunchAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QubricLaunchAnimationView.swift; sourceTree = "<group>"; };
+		A00000000000000000000137 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A00000000000000000000138 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000000000000000000007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000009 /* Qubric */,
+				A00000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000005 /* Qubric.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000009 /* Qubric */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000101 /* QubricApp.swift */,
+				A00000000000000000000102 /* QubricModels.swift */,
+				A00000000000000000000113 /* QubricQuantumEngine.swift */,
+				A00000000000000000000105 /* QubricAPIClient.swift */,
+				A00000000000000000000103 /* QubricStore.swift */,
+				A00000000000000000000135 /* QubricNotificationManager.swift */,
+				A00000000000000000000104 /* ContentView.swift */,
+				A00000000000000000000136 /* QubricLaunchAnimationView.swift */,
+				A00000000000000000000106 /* QubricTheme.swift */,
+				A00000000000000000000107 /* QubricComponents.swift */,
+				A00000000000000000000108 /* AuthView.swift */,
+				A00000000000000000000109 /* JourneyView.swift */,
+				A00000000000000000000200 /* Puzzle */,
+				A00000000000000000000111 /* DailyView.swift */,
+				A00000000000000000000112 /* AccountView.swift */,
+				A00000000000000000000137 /* PrivacyInfo.xcprivacy */,
+				A00000000000000000000138 /* Assets.xcassets */,
+				A00000000000000000000114 /* Fonts/JetBrainsMono-Regular.ttf */,
+				A00000000000000000000115 /* Fonts/JetBrainsMono-SemiBold.ttf */,
+				A00000000000000000000300 /* Resources */,
+			);
+			path = Qubric;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000200 /* Puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000110 /* PuzzleRunView.swift */,
+				A00000000000000000000116 /* ActiveTaskRow.swift */,
+				A00000000000000000000117 /* PuzzleTopBar.swift */,
+				A00000000000000000000118 /* PuzzleComparisonBoard.swift */,
+				A00000000000000000000119 /* GatePaletteView.swift */,
+				A00000000000000000000120 /* ControlsDock.swift */,
+				A00000000000000000000121 /* PredictionCard.swift */,
+				A00000000000000000000122 /* LearningTrayView.swift */,
+				A00000000000000000000123 /* SolvedInlineView.swift */,
+				A00000000000000000000124 /* ReflectionView.swift */,
+				A00000000000000000000125 /* SolveReplayView.swift */,
+				A00000000000000000000126 /* PuzzleHelpers.swift */,
+			);
+			path = Puzzle;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000300 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000134 /* QubricAppIcon.png */,
+				A00000000000000000000301 /* SFX */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000301 /* SFX */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000127 /* gate-h.wav */,
+				A00000000000000000000128 /* gate-x.wav */,
+				A00000000000000000000129 /* gate-z.wav */,
+				A00000000000000000000130 /* gate-cnot.wav */,
+				A00000000000000000000131 /* success.wav */,
+				A00000000000000000000132 /* error.wav */,
+				A00000000000000000000133 /* hint.wav */,
+			);
+			path = SFX;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000004 /* Qubric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000020 /* Build configuration list for PBXNativeTarget "Qubric" */;
+			buildPhases = (
+				A00000000000000000000006 /* Sources */,
+				A00000000000000000000007 /* Frameworks */,
+				A00000000000000000000008 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Qubric;
+			productName = Qubric;
+			productReference = A00000000000000000000005 /* Qubric.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					A00000000000000000000004 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000000010 /* Build configuration list for PBXProject "Qubric" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00000000000000000000002;
+			productRefGroup = A00000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000004 /* Qubric */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000114 /* Fonts/JetBrainsMono-Regular.ttf in Resources */,
+				B00000000000000000000115 /* Fonts/JetBrainsMono-SemiBold.ttf in Resources */,
+				B00000000000000000000134 /* QubricAppIcon.png in Resources */,
+				B00000000000000000000137 /* PrivacyInfo.xcprivacy in Resources */,
+				B00000000000000000000138 /* Assets.xcassets in Resources */,
+				B00000000000000000000127 /* gate-h.wav in Resources */,
+				B00000000000000000000128 /* gate-x.wav in Resources */,
+				B00000000000000000000129 /* gate-z.wav in Resources */,
+				B00000000000000000000130 /* gate-cnot.wav in Resources */,
+				B00000000000000000000131 /* success.wav in Resources */,
+				B00000000000000000000132 /* error.wav in Resources */,
+				B00000000000000000000133 /* hint.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000101 /* QubricApp.swift in Sources */,
+				B00000000000000000000102 /* QubricModels.swift in Sources */,
+				B00000000000000000000113 /* QubricQuantumEngine.swift in Sources */,
+				B00000000000000000000105 /* QubricAPIClient.swift in Sources */,
+				B00000000000000000000103 /* QubricStore.swift in Sources */,
+				B00000000000000000000135 /* QubricNotificationManager.swift in Sources */,
+				B00000000000000000000104 /* ContentView.swift in Sources */,
+				B00000000000000000000136 /* QubricLaunchAnimationView.swift in Sources */,
+				B00000000000000000000106 /* QubricTheme.swift in Sources */,
+				B00000000000000000000107 /* QubricComponents.swift in Sources */,
+				B00000000000000000000108 /* AuthView.swift in Sources */,
+				B00000000000000000000109 /* JourneyView.swift in Sources */,
+				B00000000000000000000110 /* PuzzleRunView.swift in Sources */,
+				B00000000000000000000116 /* ActiveTaskRow.swift in Sources */,
+				B00000000000000000000117 /* PuzzleTopBar.swift in Sources */,
+				B00000000000000000000118 /* PuzzleComparisonBoard.swift in Sources */,
+				B00000000000000000000119 /* GatePaletteView.swift in Sources */,
+				B00000000000000000000120 /* ControlsDock.swift in Sources */,
+				B00000000000000000000121 /* PredictionCard.swift in Sources */,
+				B00000000000000000000122 /* LearningTrayView.swift in Sources */,
+				B00000000000000000000123 /* SolvedInlineView.swift in Sources */,
+				B00000000000000000000124 /* ReflectionView.swift in Sources */,
+				B00000000000000000000125 /* SolveReplayView.swift in Sources */,
+				B00000000000000000000126 /* PuzzleHelpers.swift in Sources */,
+				B00000000000000000000111 /* DailyView.swift in Sources */,
+				B00000000000000000000112 /* AccountView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000000011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A00000000000000000000012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A00000000000000000000021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = NJ2432VN6P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Qubric/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Qubric;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.educational-games";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = qubric.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				QUBRIC_API_URL = "https://your-qubric-api.example.com";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A00000000000000000000022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = NJ2432VN6P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Qubric/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Qubric;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.educational-games";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = qubric.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				QUBRIC_API_URL = "https://your-qubric-api.example.com";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000010 /* Build configuration list for PBXProject "Qubric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000011 /* Debug */,
+				A00000000000000000000012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000020 /* Build configuration list for PBXNativeTarget "Qubric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000021 /* Debug */,
+				A00000000000000000000022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000001 /* Project object */;
+}
