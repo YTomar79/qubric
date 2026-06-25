@@ -1,9 +1,12 @@
 # Qubric
 
+[![App Store](https://img.shields.io/itunes/v/6772515889?label=App%20Store&color=0D96F6)](https://apps.apple.com/us/app/qubric/id6772515889)
 [![CI](https://github.com/YTomar79/qubric/actions/workflows/ci.yml/badge.svg)](https://github.com/YTomar79/qubric/actions/workflows/ci.yml)
 ![Platform](https://img.shields.io/badge/platform-iOS%2017%2B-blue)
 ![Swift](https://img.shields.io/badge/Swift-5-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
+
+**[Download Qubric on the App Store →](https://apps.apple.com/us/app/qubric/id6772515889)**
 
 Qubric is an educational quantum puzzle game for iOS. Players solve hands-on puzzles backed by a real state-vector simulator, progressing through a chapter-based journey and a rotating daily challenge.
 
